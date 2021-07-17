@@ -1,0 +1,133 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$nav-color: rgb(242, 242, 242);
+$nav-border-color: rgb(51, 51, 51);
+$text-color: rgb(51, 51, 51);
+$a-color: rgb(5, 0, 230);
+
+.form {
+  font-family: "Arial", serif;
+  color: $text-color;
+
+  &-page {
+    &-center {
+      box-sizing: border-box;
+      margin: 0 auto;
+
+      width: 360px;
+      @include media-breakpoint-up(xl) {
+        width: 1200px !important;
+      }
+
+      @include media-breakpoint-only(xs) {
+        max-width: 360px;
+      }
+
+      @include media-breakpoint-only(sm) {
+        max-width: 360px;
+      }
+
+      @include media-breakpoint-only(md) {
+        max-width: 360px;
+      }
+
+      @include media-breakpoint-only(lg) {
+        max-width: 360px;
+      }
+
+      &-navbar {
+        box-sizing: border-box;
+        height: 60px;
+        width: 360px !important;
+        @include media-breakpoint-up(xl) {
+          width: 100% !important;
+        }
+        padding-top: 15px;
+        background-color: $nav-color;
+        border-bottom: 1px $nav-border-color solid;
+
+        &-title {
+          padding-left: 12px;
+          font-size: 32px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &-row {
+    margin: 0 auto !important;
+  }
+  &-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  &-item {
+    margin-bottom: 10px !important;
+    &-label {
+      margin-bottom: 4px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    &-input {
+      padding-left: 3px !important;
+      width: 332px !important;
+      border: 1px solid $nav-border-color !important;
+      box-shadow: none !important;
+    }
+  }
+
+  &-radio {
+    margin-bottom: 0px !important;
+    &-title {
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    &-input {
+      height: 12px;
+      line-height: 12px;
+    }
+
+    &-label {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  &-text {
+    text-decoration-line: underline;
+    text-decoration-color: $a-color;
+    margin-bottom: 10px;
+
+    &-a {
+      font-size: 14px;
+      color: $a-color;
+    }
+  }
+
+  &-btn-content {
+    height: 40px !important;
+    width: 332px !important;
+    border-radius: 5px !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 25px;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1030;
+    }
+  }
+}
